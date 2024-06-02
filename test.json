@@ -1,0 +1,118 @@
+{
+  "level": "info-0",
+  "ts": "2024-05-28T11:11:09Z",
+  "logger": "trufflehog",
+  "msg": "running source",
+  "source_manager_worker_id": "zYgz6",
+  "with_units": true
+}
+{
+  "SourceMetadata": {
+    "Data": {
+      "Gitlab": {
+        "commit": "e4a615bd1aa1356e42b77fdefdf1513ef68416d9",
+        "file": ".gitlab-ci.yml",
+        "link": "https://gitlab.com/yassine-lazrak/devsecops-plateform/blob/e4a615bd1aa1356e42b77fdefdf1513ef68416d9/.gitlab-ci.yml#L62",
+        "email": "Soraya Bouraq <sorayabouraq@gmail.com>",
+        "repository": "https://gitlab.com/yassine-lazrak/devsecops-plateform.git",
+        "timestamp": "2024-05-17 16:01:42 +0000",
+        "line": 62
+      }
+    }
+  },
+  "SourceID": 1,
+  "SourceType": 9,
+  "SourceName": "trufflehog - gitlab",
+  "DetectorType": 921,
+  "DetectorName": "Dockerhub",
+  "DecoderName": "PLAIN",
+  "Verified": true,
+  "Raw": "dckr_pat_Gr_xiZEw_CnMkeYT96E2UULmId8",
+  "RawV2": "sbouraq:dckr_pat_Gr_xiZEw_CnMkeYT96E2UULmId8",
+  "Redacted": "",
+  "ExtraData": {
+    "hub_email": "sorayabouraq@gmail.com",
+    "hub_scope": "repo:admin",
+    "hub_username": "sbouraq"
+  },
+  "StructuredData": null
+}
+{
+  "level": "error",
+  "ts": "2024-05-28T11:11:25Z",
+  "logger": "trufflehog",
+  "msg": "error unarchiving chunk.",
+  "source_manager_worker_id": "zYgz6",
+  "unit": "https://gitlab.com/yassine-lazrak/devsecops-plateform.git",
+  "unit_kind": "repo",
+  "commit": "bd55eea",
+  "path": "target/petclinic.war",
+  "timeout": 30,
+  "error": "error extracting archive with format: .zip: zip: not a valid zip file"
+}
+{
+  "SourceMetadata": {
+    "Data": {
+      "Gitlab": {
+        "commit": "959c7f72f00d8411cc534c9617f321ae3a6fc603",
+        "file": ".gitlab-ci.yml",
+        "link": "https://gitlab.com/yassine-lazrak/devsecops-plateform/blob/959c7f72f00d8411cc534c9617f321ae3a6fc603/.gitlab-ci.yml#L21",
+        "email": "Soraya Bouraq <sorayabouraq@gmail.com>",
+        "repository": "https://gitlab.com/yassine-lazrak/devsecops-plateform.git",
+        "timestamp": "2024-05-07 23:52:22 +0000",
+        "line": 21
+      }
+    }
+  },
+  "SourceID": 1,
+  "SourceType": 9,
+  "SourceName": "trufflehog - gitlab",
+  "DetectorType": 767,
+  "DetectorName": "SonarCloud",
+  "DecoderName": "PLAIN",
+  "Verified": true,
+  "Raw": "11d992ad4557a227948fd619f13dbdb9ea03b0ba",
+  "RawV2": "",
+  "Redacted": "",
+  "ExtraData": null,
+  "StructuredData": null
+}
+{
+  "SourceMetadata": {
+    "Data": {
+      "Gitlab": {
+        "commit": "29933409b4c46afb1e9970a63d3a9c9cf84521c8",
+        "file": ".gitlab-ci.yml",
+        "link": "https://gitlab.com/yassine-lazrak/devsecops-plateform/blob/29933409b4c46afb1e9970a63d3a9c9cf84521c8/.gitlab-ci.yml#L21",
+        "email": "Soraya Bouraq <sorayabouraq@gmail.com>",
+        "repository": "https://gitlab.com/yassine-lazrak/devsecops-plateform.git",
+        "timestamp": "2024-05-07 23:39:19 +0000",
+        "line": 21
+      }
+    }
+  },
+  "SourceID": 1,
+  "SourceType": 9,
+  "SourceName": "trufflehog - gitlab",
+  "DetectorType": 767,
+  "DetectorName": "SonarCloud",
+  "DecoderName": "PLAIN",
+  "Verified": true,
+  "Raw": "11d992ad4557a227948fd619f13dbdb9ea03b0ba",
+  "RawV2": "",
+  "Redacted": "",
+  "ExtraData": null,
+  "StructuredData": null
+}
+{
+  "level": "info-0",
+  "ts": "2024-05-28T11:11:29Z",
+  "logger": "trufflehog",
+  "msg": "finished scanning",
+  "chunks": 1775,
+  "bytes": 6090757,
+  "verified_secrets": 3,
+  "unverified_secrets": 0,
+  "scan_duration": "19.790193591s",
+  "trufflehog_version": "3.76.3"
+}
