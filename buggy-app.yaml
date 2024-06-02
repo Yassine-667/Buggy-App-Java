@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: api
+        image: registry.gitlab.com/yassine-lazrak/devsecops-plateform
+        ports:
+        - containerPort: 80
+      dnsConfig:
+        nameservers:
+        - 8.8.8.8        # Ajoutez le serveur DNS 8.8.8.8
+      restartPolicy: Always
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-service
+spec:
+  selector:
+    app: api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
